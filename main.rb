@@ -8,6 +8,8 @@ class Button
     @secondary is_dark_mode ? '#111111' : '#E0E0E0'
   end
 
+ private
+
   def darken_foreground(color)
     color - 10
   end
