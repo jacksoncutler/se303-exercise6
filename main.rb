@@ -11,3 +11,7 @@ end
 def darken_foreground(color)
   color - 10
 end
+
+def lighten_foreground(color)
+  color + 10
+end
