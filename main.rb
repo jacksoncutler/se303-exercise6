@@ -25,6 +25,7 @@ class Button
 end
 
 def draw_button(label_text, x, y, foreground_color, is_dark_mode)
+  button = Button.new(label_text, x, y, foreground_color, is_dark_mode)
   if is_dark_mode
     Button.new(label_text, x, y, foreground_color, is_dark_mode).draw
   else
