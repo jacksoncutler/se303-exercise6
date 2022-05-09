@@ -1,6 +1,11 @@
 class Button
 
-  def initialize(label, x, y, foreground_color, is_dark_mode, secondary_color)
+  def initialize(label, x, y, foreground_color, is_dark_mode)
+    @label = label
+    @x = x
+    @y = y
+    @foreground = is_dark_mode ? darken_foreground(foreground_color) : lighten_foreground(foreground_color)
+    @secondary is_dark_mode ? '#111111' : '#E0E0E0'
   end
 
   def darken_foreground(color)
