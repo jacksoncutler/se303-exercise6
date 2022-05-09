@@ -1,4 +1,6 @@
 class Button
+  def initialize(label, x, y, foreground_color, is_dark_mode, secondary_color)
+  end
 end
 
 def draw_button(label_text, x, y, foreground_color, is_dark_mode)
