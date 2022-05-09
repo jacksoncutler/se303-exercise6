@@ -9,6 +9,7 @@ class Button
   end
 
   def draw
+    paint(@label, @x, @y, @foreground, @secondary)
   end
 
  private
